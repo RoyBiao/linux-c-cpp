@@ -1,0 +1,10 @@
+#!/bin/sh
+#shell函数
+myfind(){
+	if [ $# -lt 1 ]
+	then
+		echo "Usage:Myfind filenmae"
+	else
+		find ~/workspace/git/ -name $1 -print
+	fi
+}
